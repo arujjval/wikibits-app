@@ -15,7 +15,11 @@ export default function TabLayout() {
           backgroundColor: 'rgba(52, 52, 52, 0.8)',
           elevation: 0,
           height: 60,
+          paddingBottom: 10,
           borderTopWidth: 0,
+        },
+        tabBarLabelStyle: {
+          fontFamily: 'Inter_500Medium',
         },
         headerShown: false,
       }}>
@@ -42,7 +46,7 @@ export default function TabLayout() {
         options={{
           title: 'Profile',
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="gear" size={24} color={color} />
+            <FontAwesome name="user" size={24} color={color} />
           ),
         }}
       />
